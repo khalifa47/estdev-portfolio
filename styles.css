@@ -69,17 +69,6 @@ header {
   transition: all 0.25s ease-out;
 }
 
-@media screen and (max-width: 768px) {
-  .header-right {
-    display: none;
-  }
-
-  .mobile-menu-toggle {
-    display: block;
-    cursor: pointer;
-  }
-}
-
 .header-item {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -128,6 +117,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
+  gap: 1.25rem;
   padding: 4rem;
 }
 
@@ -348,6 +339,7 @@ main {
   color: #e91e63;
 }
 
+/* sm */
 @media screen and (max-width: 640px) {
   #about,
   #experience,
@@ -356,5 +348,29 @@ main {
     padding-right: 1.5rem;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+}
+
+/* md */
+@media screen and (max-width: 768px) {
+  .header-right {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  #about {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .section-left {
+    width: 100%;
+  }
+  .section-right {
+    width: 80%;
   }
 }
