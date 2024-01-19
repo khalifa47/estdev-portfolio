@@ -126,8 +126,9 @@ main {
 
 #about {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 4rem;
 }
 
 .section-left {
@@ -186,8 +187,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 9rem;
-  padding-right: 9rem;
+  padding: 4rem;
 }
 
 #experience h1,
@@ -346,4 +346,15 @@ main {
 
 .project-item-tags p:nth-child(4) {
   color: #e91e63;
+}
+
+@media screen and (max-width: 640px) {
+  #about,
+  #experience,
+  #projects {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
 }
