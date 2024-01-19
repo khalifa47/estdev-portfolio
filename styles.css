@@ -144,3 +144,82 @@ main {
   left: 8px;
   z-index: 1;
 }
+
+#experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#experience h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+#experience h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content {
+  width: 80%;
+}
+
+.timeline-content ul {
+  padding-left: 1rem;
+  font-size: smaller;
+  font-weight: 300;
+}
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.timeline-header img {
+  width: 70px;
+  height: 70px;
+  margin-right: 1rem;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 25%;
+  padding: 5px;
+  border: 2px solid #4d62eb;
+}
+
+.timeline-date {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  text-align: right;
+  display: block;
+  font-size: 0.8em;
+  color: #666;
+}
