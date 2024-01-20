@@ -12,6 +12,10 @@
   color: #c7c7c7;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 /* Header */
 
 header {
@@ -296,6 +300,38 @@ main {
   object-fit: contain;
   scale: 1.1;
   object-position: center;
+}
+
+.links {
+  position: absolute;
+  inset: 0;
+  top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.75rem;
+}
+
+.links div {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 0.25rem;
+  border-radius: 50%;
+  background-color: #4d62eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.links div:hover {
+  transform: scale(1.1);
+}
+
+.links img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
 }
 
 .project-item-desc {
