@@ -259,7 +259,6 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
-  margin-top: 3rem;
 }
 
 .project-item {
@@ -339,6 +338,31 @@ main {
   color: #e91e63;
 }
 
+#tech {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.tech-item {
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tech-item img {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+}
+
+.tech-item p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
 /* sm */
 @media screen and (max-width: 640px) {
   #about,
@@ -372,5 +396,9 @@ main {
   }
   .section-right {
     width: 80%;
+  }
+
+  #tech {
+    padding: 0;
   }
 }
