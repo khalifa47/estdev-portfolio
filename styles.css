@@ -158,6 +158,10 @@ main {
   max-width: 400px;
 }
 
+.img-frame {
+  animation: bobbing 2s ease-in-out infinite;
+}
+
 .img-frame,
 .img-frame::after,
 .img-frame img {
@@ -454,5 +458,18 @@ main {
 
   #tech {
     padding: 0;
+  }
+}
+
+/* Animations */
+@keyframes bobbing {
+  0%,
+  100% {
+    transform: translateY(0);
+    box-shadow: 15px -15px 4px 4px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: translateY(-10px);
+    box-shadow: 20px -20px 7px 5px rgba(0, 0, 0, 0.2);
   }
 }
