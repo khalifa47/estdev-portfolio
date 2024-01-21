@@ -43,3 +43,26 @@ mobileMenu.addEventListener('click', (e) => {
         mobileMenu.style.opacity = '0';
     }
 });
+
+// for projects section
+
+document.addEventListener('DOMContentLoaded', function () {
+    const projectItems = document.querySelectorAll('.project-item');
+
+    const options = {
+        threshold: 0.5, // Adjust as needed
+    };
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('slide-in');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    projectItems.forEach(item => {
+        observer.observe(item);
+    });
+});

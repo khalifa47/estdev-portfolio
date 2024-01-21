@@ -279,8 +279,14 @@ main {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.25s ease-out;
-  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+}
+
+.project-item.slide-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-item:hover {
@@ -398,6 +404,11 @@ main {
   width: 4rem;
   height: 4rem;
   margin: 0 auto;
+  transition: all 0.25s ease-out;
+}
+
+.tech-item:hover img {
+  transform: rotate(360deg);
 }
 
 .tech-item p {
